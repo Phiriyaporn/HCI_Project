@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1');
+body {
+	font-family: 'Gothic A1', sans-serif;
+	background-color: #f4f4f5;
+}
+
+/* Main carousel style */
+.carousel {
+    width: 600px;
+}
+
+/* Indicators list style */
+.article-slide .carousel-indicators {
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 100%;
+}
+/* Indicators list style */
+.article-slide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.article-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.article-slide .carousel-indicators .active img {
+    border: 2px solid #e79746;
+    opacity: 0.7;
+}
+
+/*----------classinfo----------*/
+
+div.wave{
+	text-align: center;
+	background: white;
+	height: 45px;
+	position: relative;
+}
+.wave::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, #f4f4f5 13px);
+}
+.wave::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px 15px, #f4f4f5 12px, transparent 13px);
+}
+
+h1#className {
+	color: #5bc0af;
+	font-weight: 600;
+	padding-left: 8px;
+	/*text-align: center;*/
+}
+div#rate{padding-left: 12px;}
+.fa-star, .review{font-size: 12px;}
+.rated{color: #fada5e;} /*yellow*/
+
+.content {
+	background-color: #fff;
+	padding-top: 40px;
+}
+
+#table td{height: 45px;}
+.desc {font-size: 16px;}
+.desctext {font-size: 14px; padding-left: 5px;}
+
+#seecoach, #seerw {
+	color: #e79746;
+	text-decoration: none;
+}
+
+a#seecoach:hover , #seerw:hover {
+	color: #e57f7d;
+}
+
+.buttons{
+	/*display: flex;
+	justify-content: center;*/
+	padding-left: 10px;
+}
+
+button.savebt {
+	background-color:  white !important;
+	border: 3px solid #e79746;
+	padding: 11px 114px;
+	border-radius: 7.5px;
+}
+
+.savebt:hover {
+	border: 3px solid #e57f7d;
+}
+
+a.save {
+	color: #e79746;
+	text-decoration: none;
+	font-weight: 540;
+}
+
+.save:hover {
+	color: #e57f7d;
+	text-decoration: none;
+}
+
+a.add {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 540;
+}
+button.Add-to-card {
+	background-color: #e79746 !important;
+	border-style: none;
+	border-radius: 7.5px;
+	margin-top: 10px;
+	/*padding: 15px 50px;*/
+	padding: 14px 131px;
+
+}
+.Add-to-card:hover {
+	background-color: #e57f7d !important;
+}
+
+a.try {
+	color: #e79746;
+}
+
+a.try:hover {
+	color: #e57f7d;
+	text-decoration: none;
+}
+
+#read {
+	color: #e79746;
+	text-decoration: none;
+}
+
+a#read:hover {
+	color: #e57f7d;
+}
+
+#read1 {
+	display: none;
+}
+
+#interested {
+	font-size: 19px;
+	font-weight: 600;
+	border-bottom: 1px solid black;
+}
+
+.fill-div {
+  color: black;
+/*  width: 90%;*/
+  margin-top: 10px;
+}
+.fill-div:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/*.product-grid6:hover{
+	box-shadow:0 0 20px #e79746;
+}*/
+
+.pic-1{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.product-grid6 .product-image6 a{display:block}
+.product-grid6:hover{box-shadow:0 5px 10px rgba(0,0,0,.2);}
+.product-grid6 .product-image6 img{width:100%;height:auto;transition:all .5s ease 0s}
+.product-grid6:hover .product-image6 img{transform:scale(1.1)}
+.product-grid6,.product-grid6 .product-image6{overflow:hidden}
+
+#cname{
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	padding-top: 5px;
+}
+
+.desctext2 {font-size: 12px;}
+
+.product-content{
+	padding-bottom: 5px;
+}
+
+/*
+.product-grid6{font-family:'Open Sans',sans-serif;text-align:center;position:relative;transition:all .5s ease 0s}
+.product-grid6 .product-content{padding:12px 12px 15px;transition:all .5s ease 0s}
+.product-grid6 .title{font-size:20px;font-weight:600;text-transform:capitalize;margin:0 0 10px;transition:all .3s ease 0s}
+*/
+@media only screen and (max-width:1200px){.product-grid6 .rating{margin:0}
+}

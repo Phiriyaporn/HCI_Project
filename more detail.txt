@@ -1,0 +1,127 @@
+<div class="container">
+	      	<div class="row">
+	      		<div class="col-sm-4">
+	      			<div class="servicebox">
+	      				<img src="image/abc21.jpg" alt="">
+	      				<div class="service-content">
+	      					<span class="service-icon">
+	      						<center><i class="glyphicon glyphicon-user"></i></center>
+	      					</span>
+	      					<center><h3 class="title">Who can become a coach?</h3></center>
+	      					<p class="description">
+	      					<li class="description"> People aged 25 years - 50 years and previous experience teaching.</li> 
+	      					
+                            <li class="description">Strong communication and interpersonal skills </li>
+                            <li class="description">You must have a bachelor's degree.</li>
+							 <li class="description"> Ability to commit to a minimum of 10-20 hours of availability per week. </li>
+							 
+
+	      				    </p>
+	      				    <a href="https://www.teachfirst.org.uk/sites/default/files/2017-12/Become_a_coach_flyer.pdf" class= "read-more"> read more</a>
+	      				</div>	
+	      			</div>
+	      		</div>
+
+	      		<div class="col-sm-4">
+	      			<div class="servicebox middle">
+	      				<div class="service-content">
+	      					<span class="service-icon">
+	      						<center><i class="fa fa-briefcase"></i></center>
+	      					</span>
+	      					<center><h3 class="title">How do I start?</h3></center>
+	      					<p class="description">
+	      					<li class="description"> Decide what type of coaching you’re going to do.</li> 
+	      					<li class="description"> Consider getting coaching training.</li>
+                            <li class="description">If you want to share knowledge with children, you can start to be. </li>
+                            <li class="description">If you have the qualifications we needed, you can <a href="app2.html" class="app" > apply now!!</a> </li>
+							 
+	      				    </p>
+	      				    <a href="https://www.teachfirst.org.uk/sites/default/files/2017-12/Become_a_coach_flyer.pdf" class= "read-more"> read more</a>
+	      				</div>
+	      				<img src="image/abc3.jpg" alt="">	
+	      			</div>
+	      		</div> 
+	      		<div class="col-sm-4">
+	      			<div class="servicebox">
+	      				<img src="image/abc17.jpg" alt="">
+	      				<div class="service-content">
+	      					<span class="service-icon">
+	      					<center><i class="fas fa-hand-holding-usd"></i></center>	
+	      					</span>
+	      					<center><h3 class="title">What can I earn as a Coach?</h3></center>
+	      					<p class="description">
+	      					<li class="description"> You will receive accident protection from the company.</li> 
+	      					<li class="description"> The company will provide accommodation for coaches.</li>
+                            <li class="description">You will get money $300+ per hour. </li>
+                            <li class="description">There is work permit for foreigners coaches. </li>
+	      				    </p>
+	      				    <a href="https://www.newrichmond.k12.wi.us/cms/lib01/WI01001868/Centricity/Domain/1523/The%20Seven%20Secrets%20of%20Successful%20Coaches.pdf" class= "read-more"> read more</a>
+	      				</div>	
+	      			</div>
+	      		</div>
+      		</div>
+      	</div>	
+
+      	<br>
+      	<br>
+
+        <div class="container">
+	      	<div class="row">
+	      		<div class="col-sm-4">
+	      			<div class="servicebox">
+	      				<img src="image/abc12.jpg" alt="">
+	      				<div class="service-content">
+	      					<span class="service-icon">
+	      						<center><i class="fas fa-award"></i></center>
+	      					</span>
+	      					<center><h3 class="title">Coach Certification</h3></center>
+	      					<p class="description">
+	      					<li class="description"> You will get IAC certification (The International Association of Coaching) depend on your writing and exam before work.</li> 
+	      					<li class="description">You will get ICF ( International Coach Federation) certification base on a number of paid coaching hours.</li>
+                            <li class="description">IAC and ICF are two of the best-known organizations that provide to coaches.</li>
+                            <li class="description">Certificate can approve of other work.</li>
+
+                            
+	      				    </p>
+
+	      				    
+	      				    <a href="https://coachology.com/our-services/corporate-workshop/icf-leadership-coaching/" class= "read-more"> read more</a>
+	      				</div>	
+	      			</div>
+	      		</div>
+
+	      		<div class="col-sm-4">
+	      			<div class="servicebox middle">
+	      				<div class="service-content">
+	      					<span class="service-icon">
+	      						<center><i class="fas fa-arrows-alt"></i></center>
+	      					</span>
+	      					<center><h3 class="title">How flexible is the work?</h3></center>
+	      					<p class="description">
+	      					<li class="description">Is a job, using the ability to communicate with children, allowing them to understand what they are learning.</li> 
+	      					<li class="description"> Must be on time and can be a late 5 time per month.</li>
+                            <li class="description">Can personal leave not more than 3 times. </li>
+                            <li class="description">Can invite people you know to work here as well if they have the qualities that we need. </li>
+
+
+	      				    </p>
+	      				    <a href="https://www.teachfirst.org.uk/sites/default/files/2017-12/Become_a_coach_flyer.pdf" class= "read-more"> read more</a>
+	      				</div>
+	      				<img src="image/abc19.jpg" alt="">	
+	      			</div>
+	      		</div> 
+	      		<div class="col-sm-4">
+	      			<div class="servicebox">
+	      				<img src="image/abc18.jpg" alt="">
+	      				<div class="service-content">
+	      					<span class="service-icon">
+	      					<center style =" right: 102px"><i class="fas fa-user-check"></i></center>	
+	      					</span>
+	      					<center><h3 class="title">How can I nominate a person?</h3></center>
+	      					<p class="description">
+	      					<li class="description">You can nominate a person by their skill.</li> 
+	      					<li class="description">Make a survey in the company to nominate.</li>
+                            <li class="description">Measured by work experience each person.</li>
+                            <li class="description">Submit the name of a person who should be recognized for their outstanding contributions to the community.  </li>
+
+	      				    </p>

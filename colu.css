@@ -1,0 +1,95 @@
+.sevicebox{
+   text-align: center;
+   /*margin: 0 -150px;*/
+}
+
+.carousel-item img{
+  width: 100%;
+  height: 550px;
+
+}
+
+.servicebox img{
+  width: 340px;
+  height: 250px;
+}
+.servicebox .service-content{
+  position: relative;
+  background: #5bc0af;
+  color: #feffff;
+  padding: 50px 30px 30px;
+}
+.servicebox .service-icon{
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: #faeaab;
+  border-radius: 10px;
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right:0;
+  margin: auto;
+  transform: rotate(45deg);
+
+}
+.servicebox .service-icon i{
+  font-size: 30px;
+  line-height: 70px;
+  text-align: center;
+  color: #00a996;
+  transform: rotate(-45deg);
+
+}
+.servicebox .title{
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-transform: uppercase;
+
+}
+.servicebox .description .app{
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  color: red;
+
+}
+.servicebox .description{
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 10px;
+
+}
+
+.servicebox .read-more{
+  display: inline-block;
+  padding: 7px 20px;
+  border: 1px solid #f0f4ba;
+  border-radius: 80px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #feffff ;
+  background: #e79746;
+  text-transform: capitalize;
+  transition: all 0.5s ease 0s;
+
+}
+.servicebox .read-more:hover{
+  color: #feffff;
+  background: #E57F7D;
+  text-decoration: none;
+}
+
+.servicebox.middle .service-content{
+  padding: 30px 30px 50px;
+
+}
+.servicebox.middle .service-icon{
+  bottom: -35px;
+  top: auto;
+  
+}

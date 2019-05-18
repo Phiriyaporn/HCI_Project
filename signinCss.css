@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1');
+body {
+	font-family: 'Gothic A1', sans-serif;
+}
+
+input {
+	width: 72%;
+}
+
+h5#contact {
+	color: #5bc0af;
+	font-weight: 800;
+	/*text-align: center;*/
+	padding-bottom: 20px;
+	padding-left: 100px;
+}
+
+.star {
+	color:red;
+}
+
+a#fgpw {
+	font-size: 14px;
+	color: grey;
+	text-decoration: underline;
+	padding-left: 170px;
+}
+
+a#fgpw:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.gray {
+	font-size: 14px;
+	color: grey;
+}
+
+.p1 {
+	font-size: 15px;
+	font-weight: 640;
+}
+
+.blue {
+	color: #0492c2;
+}
+
+.msg {
+	padding-left: 100px;
+}
+
+.msg input {
+	height: 35px;
+}
+
+.button {
+	border-radius: 7.5px;
+	background-color: #E79746;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 10px 30.5%;
+}
+
+.button2 {
+	border-radius: 7.5px;
+	background-color: #E79746;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 11px 23.5%;
+}
+
+.button:hover, .button2:hover {
+	background-color: #e57f7d !important;
+}
+
+.send {
+	padding-top: 5px;
+}
+
+a.bt {
+	color: #ffffff;
+	text-decoration: none;
+}

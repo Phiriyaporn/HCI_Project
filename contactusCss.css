@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1');
+body {
+    font-family: 'Gothic A1', sans-serif;
+}
+/*
+p.in{
+  text-align: center;
+  font-size: 14px;
+}
+p{
+  text-align: center;
+  font-size: 18px;
+  margin-top:0; 
+  color: black;
+
+}
+.media{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-53%, -50%);
+}
+
+div.ct{
+  list-style: none;
+  display: inline-block;
+  font-size: 10px;
+  color:  #5bc0af;
+  transition: .5s;
+
+}*/
+h1 {
+  margin-top: 60px;
+  color: #5bc0af;
+  font-weight: 600;
+}
+a {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+  transition: 0.3s;
+}
+a:hover{
+  font-size: 30px;
+  color: #e57f7d;
+}
+
+p{
+  padding-top: 20px;
+}

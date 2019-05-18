@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1');
+body {
+	font-family: 'Gothic A1', sans-serif;
+}
+
+* {
+box-sizing: border-box;
+}
+/* Create two columns/boxes that floats next to each other */
+nav.nav-left {
+  float: left;
+  width: 18%;
+  padding-left: 20px;
+  background: none;
+}
+
+article {
+  float: left;
+  width: 80%;
+}
+
+section#sect {
+  padding: 0px;
+}
+
+/* Clear floats after the columns */
+section#sect:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check input:checked ~ .checkmark {
+  background-color: #5bc0af;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*filter Nav*/
+.sidenav {
+  height: 100%;
+  width: 230px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 85px;
+}
+
+.zippin {
+	display: flex;
+	flex-direction: row;
+}
+
+.example {
+  color: grey;
+  font-size: 14px;
+}
+
+.selectsearch {
+  padding-left: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+h5.fil {
+	padding-bottom: 10px;
+}
+
+.p1 {
+  font-size: 15px;
+  font-weight: 550;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+
+/*header*/
+p#steamBlog {
+	padding-left: 590px;
+	color: #5bc0af;
+	font-size: 50px;
+	font-weight: 900;
+}
+
+.cona {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.search-container {
+	float: right;
+	width: 400px;
+	padding-bottom: 5px;
+}
+
+.searchbt {
+	background-color: #5bc0af !important;
+	border-style: none;
+}
+
+.searchbt:hover {
+	background-color: #e57f7d !important;
+}
+
+.show {
+	display: flex;
+	/*justify-content: flex-end;*/
+}
+
+.searchNav {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+div.gosearch {
+	display: block;
+	text-align: center;
+}
+
+/*----------------STEM.html----------------*/
+
+a.clickread {
+
+}
+
+a.clickread2 {
+	color: #000;
+}
+
+a.clickread2:hover {
+	color: #000;
+	text-decoration: none;
+	box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.bigpic {position: relative;}
+
+.text-block {
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	bottom: 23px;
+	color: #fff;
+	padding-left: 20px;
+}
+
+.bloghead {
+	font-size: 50px;
+	font-weight: 700;
+}
+
+p#bigArticle{
+	font-size: 19px;
+}
+
+.bloghead2 {
+	color: #5bc0af;
+	font-weight: 600;
+}
+
+div.pic1 {
+	padding-left: 70px;
+}
+
+div.pic2 {
+	padding-left: 150px;
+}
+
+.toyname{
+	color: #000;
+}
+
+.moreclass{
+	display: flex;
+	justify-content: center;
+}
+
+button.classm {
+	background-color: #e79746 !important;
+	border-style: none;
+	width: 40%;
+	height: 40px;
+	border-radius: 7.5px;
+}
+.classm:hover {
+	background-color: #e57f7d !important;
+}
+
+a.readmore {
+	color: #ffffff;
+	text-decoration: none;
+	/*display: block;
+	text-align: right;*/
+}
+
+.irs--round .irs-bar {
+  background-color: #e57f7d;
+}
+.irs--round .irs-handle {
+  border: 4px solid #e57f7d;
+}
+
+.irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single {
+  background-color: #7bbfe6;
+}
+
+.irs--round .irs-from:before, .irs--round .irs-to:before, .irs--round .irs-single:before {border-top-color: #7bbfe6;}
+
+
+
+

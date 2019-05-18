@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>STEM Blog</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+          crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--Plugin CSS file with desired skin-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
+
+  <!--jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!--Plugin JavaScript file-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+
+</head>
+<body>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5c3225057a79fc1bddf37b5c/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
+<header>
+  <nav class="stroke">
+    <ul>
+      <a href="homepage2.html"><img src="img/logo-logo.png" alt=""></a>
+      <li><a href="homepage2.html">Home</a></li>
+      <li><a href="classes.html">Find a class</a></li>
+      <li><a href="coach.html">Be our coach</a></li>
+      <li><a href="newSTEM.html">Stem blogs</a></li>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="contactUs.html">Contact us</a></li>
+      <li><a class="right x" id="cart" href="signin.html"><i class="fas fa-user"></i></a></li>
+      <li><a class="right" href="#"><i class="fas fa-shopping-cart"><span style="font-size: 12px;"class="number-product"> 1 </span></i></a></li>
+    </ul>
+  </nav>
+</header>
+<section id="sect">
+  <nav class="nav-left">
+    <div class="sidenav">
+      <div><h5 class="fil"><i style="font-size:18px" class="fa">&#xf0b0;</i> Filter</h5>
+        <div>
+          <label class="p1">Age</label><br>
+          <div style="width: 90%; float: left;
+      position: relative;
+      left: 5%;">
+            <input type="text" id="demo_10" name="rangePrimary" value=""/>
+            <p id="priceRangeSelected"></P>
+          </div>
+        </div>
+        <div>
+          <div class="selectsearch">
+          	<label>Thinking Skills</label><br>
+            <ul id="tick1">
+              <li><label class="container check">Communication<input type="checkbox"><span
+                  class="checkmark"></span></label></li>
+              <li><label class="container check">Concentration<input type="checkbox"><span
+                  class="checkmark"></span></label></li>
+              <li><label class="container check">Creativity<input type="checkbox"><span
+                  class="checkmark"></span></label></li>
+              <li><label class="container check">Critical Thinking<input type="checkbox"><span class="checkmark"></span></label>
+              </li>
+              <li><label class="container check">Problem Solving<input type="checkbox"><span
+                  class="checkmark"></span></label></li>
+            </ul>
+            <label>Social skills</label><br>
+            <ul id="tickk1">
+              <li><label class="container check">Self Confident<input type="checkbox"><span
+                  class="checkmark"></span></label></li>
+              <li><label class="container check">Self Reliance<input type="checkbox"><span
+                  class="checkmark"></span></label></li>
+              <li><label class="container check">Teamwork<input type="checkbox"><span class="checkmark"></span></label>
+              </li>
+              <li><label class="container check">Active Lifestyle<input type="checkbox"><span class="checkmark"></span></label>
+              </li>
+            </ul>
+            <label>School Skills</label><br>
+            <ul id="tickkk1">
+              <li><label class="container check">Languges<input type="checkbox"><span class="checkmark"></span></label>
+              </li>
+              <li><label class="container check">Mathematics<input type="checkbox"><span
+                  class="checkmark"></span></label></li>
+              <li><label class="container check">Science<input type="checkbox"><span class="checkmark"></span></label>
+              </li>
+              <li><label class="container check">Social studies<input type="checkbox"><span
+                  class="checkmark"></span></label></li>
+              <li><label class="container check">Computer<input type="checkbox"><span class="checkmark"></span></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </nav>
+
+  <!-- content -->
+  <article>
+    <div class="container cona">
+    	<br>
+      <div class="row" style="padding-bottom: 20px;">
+        <div class="col-md-7 zippin show">
+          <label style="padding-top: 7px; padding-right: 5px;">Sort by</label>
+          <select class="form-control" style="width: 130px;">
+            <option value="0" selected>New to Old</option>
+            <option value="1">Old to New</option>
+            <option value="2">A to Z</option>
+            <option value="3">Z to A</option>
+          </select>
+        </div>
+        <div class="col-md-5 align-content-center">
+          <div class="input-group search-container">
+            <input type="text" class="form-control" name="search" placeholder=" Search for Blogs">
+            <button type="submit" class="btn btn-primary searchbt"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+<!--       <div class="row">
+        <div class="col-md-12 zippin show">
+          <p style="color: gray; padding-top: 5px;">Showing <span style="font-weight: 650;">4</span> of <span
+              style="font-weight: 650;">20</span> results.</p>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="col-md-12">
+          <a href="block.html" class="clickread">
+            <div class="bigpic">
+              <img src="image/kids.jpg" alt="kids" style="width:100%; height: 400px; opacity: 0.9; border-radius: 5px;">
+              <div class="text-block">
+                <span class="bloghead">When your kids outgrow inset puzzles</span>
+                <div class="row">
+                  <div class="col-md-10">
+                    <p id="bigArticle">Playing with puzzles has many benefits for young kids. They help develop
+                      cognitive skills (matching, problem-solving), social-emotional skills (patience, persistence), and
+                      motor skills.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <br>
+    </div>
+    <!-- ---- blogs ---- -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <a href="block.html" class="clickread2">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <h3 class="bloghead2">Toy Ideas by Skill</h3>
+                  <div class="mb-1 text-muted">Jan 7, 2019 by Josh Nillson</div>
+                  <p class="card-text mb-auto">Many times we are drawn to toys that are hot or in or look fun, or that
+                    we accidentally come across while shopping for other things.</p><br>
+                </div>
+              </div>
+              <div class="row pic1">
+                <div class="col-md-4" style="padding-bottom: 20px;">
+                  <div class="card rounded">
+                    <div class="card-image">
+                      <center><img class="img-fluid" src="image/toy.jpeg" width="110" height="110"/></center>
+                    </div>
+                    <div class="text-center">
+                      <div class="ad-title m-auto">
+                        <span class="toyname">Dog toy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card rounded">
+                    <div class="card-image">
+                      <center><img class="img-fluid" src="image/toy3.jpg" width="110" height="110"/></center>
+                    </div>
+                    <div class="text-center">
+                      <div class="ad-title m-auto">
+                        <span class="toyname">Car toy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card rounded">
+                    <div class="card-image">
+                      <center><img class="img-fluid" src="image/toy2.jpg" width="110" height="110"/></center>
+                    </div>
+                    <div class="text-center">
+                      <div class="ad-title m-auto">
+                        <span class="toyname">Bear toy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <a href="block.html" class="clickread2">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <h3 class="bloghead2">When kids outgrow inset puzzles</h3>
+                  <div class="mb-1 text-muted">Feb 7, 2019 by Josh Nillson</div>
+                  <p class="card-text mb-auto">Playing with puzzles help develop cognitive skills (matching,
+                    problem-solving), social-emotional skills (patience, persistence), and motor skills.</p>
+                </div>
+              </div>
+              <div class="row pic2">
+                <div class="col-md-6" style="padding-bottom: 20px;">
+                  <div class="card rounded">
+                    <div class="card-image">
+                      <center><img class="img-fluid" src="image/toy4.jpg" width="110" height="110"/></center>
+                    </div>
+                    <div class="text-center">
+                      <div class="ad-title m-auto">
+                        <span class="toyname">Elephant box</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card rounded">
+                    <div class="card-image">
+                      <center><img class="img-fluid" src="image/toy5.jpg" width="110" height="110"/></center>
+                    </div>
+                    <div class="text-center">
+                      <div class="ad-title m-auto">
+                        <span class="toyname">Snake puzzle</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <a href="block.html" class="clickread2">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <h3 class="bloghead2">Toy Ideas by Skill</h3>
+                  <div class="mb-1 text-muted">Jan 7, 2019 by Josh Nillson</div>
+                  <p class="card-text mb-auto">Many times we are drawn to toys that are hot or in or look fun, or that
+                    we accidentally come across while shopping for other things.</p><br>
+                </div>
+              </div>
+              <div class="row pic1">
+                <div class="col-md-4" style="padding-bottom: 20px;">
+                  <div class="card rounded">
+                    <div class="card-image">
+                      <center><img class="img-fluid" src="image/toy.jpeg" width="110" height="110"/></center>
+                    </div>
+                    <div class="text-center">
+                      <div class="ad-title m-auto">
+                        <span class="toyname">Dog toy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card rounded">
+                    <div class="card-image">
+                      <center><img class="img-fluid" src="image/toy3.jpg" width="110" height="110"/></center>
+                    </div>
+                    <div class="text-center">
+                      <div class="ad-title m-auto">
+                        <span class="toyname">Car toy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card rounded">
+                    <div class="card-image">
+                      <center><img class="img-fluid" src="image/toy2.jpg" width="110" height="110"/></center>
+                    </div>
+                    <div class="text-center">
+                      <div class="ad-title m-auto">
+                        <span class="toyname">Bear toy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <a href="block.html" class="clickread2">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <h3 class="bloghead2">When kids outgrow inset puzzles</h3>
+                  <div class="mb-1 text-muted">Feb 7, 2019 by Josh Nillson</div>
+                  <p class="card-text mb-auto">Playing with puzzles help develop cognitive skills (matching,
+                    problem-solving), social-emotional skills (patience, persistence), and motor skills.</p>
+                </div>
+              </div>
+              <div class="row pic2">
+                <div class="col-md-6" style="padding-bottom: 20px;">
+                  <div class="card rounded">
+                    <div class="card-image">
+                      <center><img class="img-fluid" src="image/toy4.jpg" width="110" height="110"/></center>
+                    </div>
+                    <div class="text-center">
+                      <div class="ad-title m-auto">
+                        <span class="toyname">Elephant box</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card rounded">
+                    <div class="card-image">
+                      <center><img class="img-fluid" src="image/toy5.jpg" width="110" height="110"/></center>
+                    </div>
+                    <div class="text-center">
+                      <div class="ad-title m-auto">
+                        <span class="toyname">Snake puzzle</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="moreclass">
+          <button type="button" class="btn btn-primary classm"><a class="readmore" href="#">See more Blogs</a></button>
+        </div>
+      </div>
+    </div>
+    <br>
+    </div>
+  </article>
+</section>
+<!-- Footer -->
+<section id="footer">
+  <div class="container">
+    <div class="row text-center text-xs-center text-sm-left text-md-left">
+      <div class="col-xs-12 col-sm-4 col-md-1"></div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5>Parents</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="classes.html"><i class="fa fa-angle-double-right"></i>Find a class</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Birthday Parties/Playdate</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Send Gift Cards</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>DIY Activity</a></li>
+          <li><a href="faqs.html"><i class="fa fa-angle-double-right"></i>F.A.Q</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Login</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Sign up</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5>Coach</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Our Coach</a></li>
+          <li><a href="coach.html"><i class="fa fa-angle-double-right"></i>Become Coach</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Nominate Coach</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Login</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Sign up</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <h5>Company</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="AboutUs.html"><i class="fa fa-angle-double-right"></i>About us</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Our Approach</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Team</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Careers</a></li>
+          <li><a href="newSTEM.html"><i class="fa fa-angle-double-right"></i>Blog</a></li>
+          <li><a href="contactUs.html" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Contact
+            us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
+        <ul class="list-unstyled list-inline social text-center">
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-google-plus-g"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
+      </hr>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+        <p class="h6">&copy Copyright 2019 STEM.com</p>
+      </div>
+      </hr>
+    </div>
+  </div>
+</section>
+<!-- ./Footer -->
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<!-- CSS -->
+<link rel="stylesheet" href="stemCss.css">
+<link rel="stylesheet" href="footerCss.css">
+<link rel="stylesheet" href="nav.css">
+<script>
+    $("#demo_10").ionRangeSlider({
+        skin: "round",
+        type: "double",
+        // grid: true,
+        min: 0,
+        max: 18,
+        from: 5,
+        to: 10,
+        max_postfix: "+",
+        // prefix: "Age: ",
+        // postfix: " years",
+    });
+</script>
+</body>
+</html>

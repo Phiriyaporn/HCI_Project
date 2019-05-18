@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classes</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+          crossorigin="anonymous"></script>
+  <!--slider import-->
+  <!--Plugin CSS file with desired skin-->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
+  <!--jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--Plugin JavaScript file-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+</head>
+<body>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5c3225057a79fc1bddf37b5c/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
+<header>
+  <nav class="stroke">
+    <ul>
+      <a href="homepage2.html"><img src="img/logo-logo.png" alt=""></a>
+      <li><a href="homepage2.html">Home</a></li>
+      <li><a href="classes.html">Find a class</a></li>
+      <li><a href="coach.html">Be our coach</a></li>
+      <li><a href="newSTEM.html">Stem blogs</a></li>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="contactUs.html">Contact us</a></li>
+      <li><a class="right x" id="cart" href="signin.html"><i class="fas fa-user"></i></a></li>
+      <li><a class="right" href="#"><i class="fas fa-shopping-cart"><span style="font-size: 12px;" class="number-product"> 1 </span></i></a></li>
+    </ul>
+  </nav>
+</header>
+<!--Header-->
+<div class="toppic">
+  <img src="image/kids3cut.jpg" style="width:100%; opacity: 0.8;">
+  <div class="content">
+    <span id="findclass">Classes</span>
+    <div class="moreclass">
+      <div class="input-group search-container">
+        <input type="text" class="form-control" name="search" placeholder=" Search for classes">
+        <button type="submit" class="btn btn-primary searchbt"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+    <span id="searchtype">Enter Name of Class, Coach, Zipcode or Location</span>
+  </div>
+</div>
+
+<!--navigation-->
+<nav class="nav-left">
+  <div class="sidenav filter">
+    <div><h5 class="fil"><i style="font-size:18px" class="fa">&#xf0b0;</i> Filter</h5>
+      <!-- <div class="form-group">
+        <span class="p1">Zip Code or Location</span>
+        <div class="input-group zippin">
+          <input type="text" class="form-control" id="zipcode" name="zipcode">
+          <button type="submit" class="btn btn-primary searchbt"><i class="fas fa-map-marker-alt"></i>
+          </button>
+        </div>
+      </div> -->
+      <div>
+        <p class="p1">Price ($)</p>
+        <div style="width: 90%; float: left; position: relative; left: 5%;">
+          <input type="text" id="price_slider" name="rangePrimary" value=""/>
+          <p id="priceRangeSelected"></p>
+        </div>
+      </div>
+      <div>
+        <label class="p1">Age</label><br>
+        <!--slider-->
+        <div style="width: 90%; float: left; position: relative; left: 5%;">
+          <input type="text" id="demo_10" name="rangePrimary" value=""/>
+          <p id="priceRangeSelected"></p>
+        </div>
+      </div>
+      <div>
+        <p class="p1">Season</p>
+        <!--slider-->
+        <div style="width: 90%; float: left; position: relative; left: 5%;">
+          <input type="text" id="season_slider" name="rangePrimary" value=""/>
+          <p id="priceRangeSelected"></p>
+        </div>
+      </div>
+      <div>
+        <label class="p1">Day</label><br>
+        <div class="selectsearch dayFilter">
+          <label class="container check">Monday<input type="checkbox" rel="Mon" onchange="change();"><span
+              class="checkmark"></span></label>
+          <label class="container check">Tuesday<input type="checkbox" rel="Tue" onchange="change();"><span
+              class="checkmark"></span></label>
+          <label class="container check">Wednesday<input type="checkbox" rel="Wed" onchange="change();"><span
+              class="checkmark"></span></label>
+          <label class="container check">Thursday<input type="checkbox" rel="Thu" onchange="change();"><span
+              class="checkmark"></span></label>
+          <label class="container check">Friday<input type="checkbox" rel="Fri" onchange="change();"><span
+              class="checkmark"></span></label>
+          <label class="container check">Saturday<input type="checkbox" rel="Sat" onchange="change();"><span
+              class="checkmark"></span></label>
+          <label class="container check">Sunday<input type="checkbox" rel="Sun" onchange="change();"><span
+              class="checkmark"></span></label>
+        </div>
+      </div>
+      <div>
+        <p class="p1">Time</p>
+        <div style="width: 80%; float: left; position: relative; left: 10%;">
+          <input type="text" id="time_slider" name="rangePrimary" value=""/>
+        <p id="priceRangeSelected"></p>
+      </div>
+    </div>
+    <div>
+      <label class="p1">Setting</label><br>
+      <div class="selectsearch">
+        <label class="container check">Indoor<input type="checkbox"><span class="checkmark"></span></label>
+        <label class="container check">Outdoor<input type="checkbox"><span class="checkmark"></span></label>
+      </div>
+    </div>
+    <div>
+      <label class="p1">Coach Gender</label><br>
+      <div class="selectsearch">
+        <label class="container check">Male<input type="checkbox"><span class="checkmark"></span></label>
+        <label class="container check">Female<input type="checkbox"><span class="checkmark"></span></label>
+      </div>
+    </div>
+
+    <div>
+      <label class="p1">Skills</label><br>
+      <div class="selectsearch">
+        <label class="container check">Thinking Skills <i class="fas fa-angle-down"></i><input id="tick" type="checkbox"><span
+            class="checkmark"></span></label>
+        <ul id="tick1">
+          <li><label class="container check">Communication<input type="checkbox"><span
+              class="checkmark"></span></label></li>
+          <li><label class="container check">Concentration<input type="checkbox"><span
+              class="checkmark"></span></label></li>
+          <li><label class="container check">Creativity<input type="checkbox"><span
+              class="checkmark"></span></label></li>
+          <li><label class="container check">Critical Thinking<input type="checkbox"><span
+              class="checkmark"></span></label>
+          </li>
+          <li><label class="container check">Problem Solving<input type="checkbox"><span
+              class="checkmark"></span></label></li>
+        </ul>
+        <label class="container check">Social skills <i class="fas fa-angle-down"></i><input id="tickk" type="checkbox"><span
+            class="checkmark"></span></label>
+        <ul id="tickk1">
+          <li><label class="container check">Self Confident<input type="checkbox"><span
+              class="checkmark"></span></label></li>
+          <li><label class="container check">Self Reliance<input type="checkbox"><span
+              class="checkmark"></span></label></li>
+          <li><label class="container check">Teamwork<input type="checkbox"><span
+              class="checkmark"></span></label>
+          </li>
+        </ul>
+        <label class="container check">Active Lifestyle<input id="tickk" type="checkbox"><span
+            class="checkmark"></span></label>
+        <label class="container check">School Skills <i class="fas fa-angle-down"></i><input id="tickkk" type="checkbox"><span
+            class="checkmark"></span></label>
+        <ul id="tickkk1">
+          <li><label class="container check">Languges<input type="checkbox"><span
+              class="checkmark"></span></label>
+          </li>
+          <li><label class="container check">Mathematics<input type="checkbox"><span
+              class="checkmark"></span></label></li>
+          <li><label class="container check">Science<input type="checkbox"><span class="checkmark"></span></label>
+          </li>
+          <li><label class="container check">Social studies<input type="checkbox"><span
+              class="checkmark"></span></label></li>
+          <li><label class="container check">Computer<input type="checkbox"><span
+              class="checkmark"></span></label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br>
+  </div>
+  </div>
+</nav>
+<!--Content-->
+<section id="sec">
+  <article>
+    <div class="container" style="padding-top: 20px;">
+      <!-- search&sort -->
+      <div class="row">
+        <div class="col-md-4 zippin show">
+          <label style="padding-top: 7px; padding-right: 5px;">Sort by</label>
+          <select class="form-control" style="width: 180px;">
+            <option value="0" selected>Price: Low to high</option>
+            <option value="1">Price: High to low</option>
+            <option value="2" selected>A to Z</option>
+            <option value="3">Z to A</option>
+          </select>
+        </div>
+        <div class="col-md-8"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 zippin show">
+          <p style="color: gray; padding-top: 5px;">Showing <span style="font-weight: 650;">12</span> of <span
+              style="font-weight: 650;">30</span> results.</p>
+        </div>
+      </div>
+
+      <!-- class row1 -->
+      <div class="row result">
+        <div class="col-md-3 col-sm-6 age46 Mon">
+          <div class="product-grid6 age46 Mon">
+            <a href="classinfo.html" class="fill-div">
+              <div class="product-image6 age46 Mon">
+                <img class="pic-1" src="image/classimg.jpg">
+              </div>
+              <div class="product-content age46 Mon"
+                   style="background-color: white; border:1px solid #f4f4f5;">
+                <h3 class="title">Camp On</h3>
+                <center>
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-child icon"></i></td>
+                      <td><span class="a">Age: 4 to 6</span></td>
+
+                      <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                      <td><span class="a">Rama 9</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fas fa-clock icon"></i></td>
+                      <td><span class="a">Monday 4-5pm</span></td>
+
+                      <td style="padding-left: 10px;"><i class="fas fa-chalkboard-teacher icon1"></i>
+                      </td>
+                      <td><span class="a">Mr.Robert</span></td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 age46 Tue">
+          <div class="product-grid6 age46 Tue">
+            <a href="classinfo.html" class="fill-div">
+              <div class="product-image6 age46 Tue">
+                <img class="pic-1" src="image/classimg5.jpg">
+              </div>
+              <div class="product-content age46 Tue"
+                   style="background-color: white; border:1px solid #f4f4f5;">
+                <h3 class="title">Catching Colors</h3>
+                <center>
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-child icon"></i></td>
+                      <td><span class="a">Age: 4 to 6</span></td>
+
+                      <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                      <td><span class="a">Rama 9</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fas fa-clock icon"></i></td>
+                      <td><span class="a">Tuesday 4-5pm</span></td>
+
+                      <td style="padding-left: 10px;"><i class="fas fa-chalkboard-teacher icon1"></i>
+                      </td>
+                      <td><span class="a">Ms.Annie</span></td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 age46 Wed">
+          <div class="product-grid6 age46 Wed">
+            <a href="classinfo.html" class="fill-div">
+              <div class="product-image6 age46 Wed">
+                <img class="pic-1" src="image/classimg2.png">
+              </div>
+              <div class="product-content age46 Wed"
+                   style="background-color: white; border:1px solid #f4f4f5;">
+                <h3 class="title">Catch the Moon</h3>
+                <center>
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-child icon"></i></td>
+                      <td><span class="a">Age: 4 to 6</span></td>
+
+                      <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                      <td><span class="a">Rama 9</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fas fa-clock icon"></i></td>
+                      <td><span class="a">Wedsday 4-5pm</span></td>
+
+                      <td style="padding-left: 10px;"><i class="fas fa-chalkboard-teacher icon1"></i>
+                      </td>
+                      <td><span class="a">Mr.Paul</span></td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 age03 Thu">
+          <div class="product-grid6 age03 Thu">
+            <a href="classinfo.html" class="fill-div">
+              <div class="product-image6 age03 Thu">
+                <img class="pic-1" src="image/classimg7.png">
+              </div>
+              <div class="product-content age03 Thu"
+                   style="background-color: white; border:1px solid #f4f4f5;">
+                <h3 class="title">Design a Nature</h3>
+                <center>
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-child icon"></i></td>
+                      <td><span class="a">Age: 0 to 3</span></td>
+
+                      <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                      <td><span class="a">Rama 9</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fas fa-clock icon"></i></td>
+                      <td><span class="a">Thursday 4-5pm</span></td>
+
+                      <td style="padding-left: 10px;"><i class="fas fa-chalkboard-teacher icon1"></i>
+                      </td>
+                      <td><span class="a">Mr.Carl</span></td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <br><br>
+
+      <!-- class row2 -->
+      <div class="row result">
+        <div class="col-md-3 col-sm-6 age711 Fri">
+          <div class="product-grid6 age711 Fri">
+            <a href="classinfo.html" class="fill-div age711 Fri">
+              <div class="product-image6 age711 Fri">
+                <img class="pic-1" src="image/classimg6.jpg">
+              </div>
+              <div class="product-content age711 Fri"
+                   style="background-color: white; border:1px solid #f4f4f5;">
+                <h3 class="title">For the Birds</h3>
+                <center>
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-child icon"></i></td>
+                      <td><span class="a">Age: 7 to 11</span></td>
+
+                      <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                      <td><span class="a">Rama 9</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fas fa-clock icon"></i></td>
+                      <td><span class="a">Friday 4-5pm</span></td>
+
+                      <td style="padding-left: 10px;"><i class="fas fa-chalkboard-teacher icon1"></i>
+                      </td>
+                      <td><span class="a">Mr.Paul</span></td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 age711 Sat">
+          <div class="product-grid6 age711 Sat">
+            <a href="classinfo.html" class="fill-div">
+              <div class="product-image6 age711 Sat">
+                <img class="pic-1" src="image/classimg8.jpg">
+              </div>
+              <div class="product-content age711 Sat"
+                   style="background-color: white; border:1px solid #f4f4f5;">
+                <h3 class="title">Frozen Treasure</h3>
+                <center>
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-child icon"></i></td>
+                      <td><span class="a">Age: 7 to 11</span></td>
+
+                      <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                      <td><span class="a">Rama 9</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fas fa-clock icon"></i></td>
+                      <td><span class="a">Saturday 4-5pm</span></td>
+
+                      <td style="padding-left: 10px;"><i class="fas fa-chalkboard-teacher icon1"></i>
+                      </td>
+                      <td><span class="a">Mr.Robert</span></td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 age03 Sat">
+          <div class="product-grid6 age03 Sat">
+            <a href="classinfo.html" class="fill-div">
+              <div class="product-image6 age03 Sat">
+                <img class="pic-1" src="image/classimg4.jpg">
+              </div>
+              <div class="product-content age03 Sat"
+                   style="background-color: white; border:1px solid #f4f4f5;">
+                <h3 class="title">House from snow</h3>
+                <center>
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-child icon"></i></td>
+                      <td><span class="a">Age: 0 to 3</span></td>
+
+                      <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                      <td><span class="a">Rama 9</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fas fa-clock icon"></i></td>
+                      <td><span class="a">Saturday 4-5pm</span></td>
+
+                      <td style="padding-left: 10px;"><i class="fas fa-chalkboard-teacher icon1"></i>
+                      </td>
+                      <td><span class="a">Ms.Sarah</span></td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 filterDiv 12to18 Sun">
+          <div class="product-grid6 Sun">
+            <a href="classinfo.html" class="fill-div">
+              <div class="product-image6 12to18 Sun">
+                <img class="pic-1" src="image/classimg9.png">
+              </div>
+              <div class="product-content 12to18 Sun"
+                   style="background-color: white; border:1px solid #f4f4f5;">
+                <h3 class="title">I Spy with my Phone</h3>
+                <center>
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-child icon"></i></td>
+                      <td><span class="a">Age: 12 to 18</span></td>
+
+                      <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                      <td><span class="a">Rama 9</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fas fa-clock icon"></i></td>
+                      <td><span class="a">Sunday 4-5pm</span></td>
+
+                      <td style="padding-left: 10px;"><i class="fas fa-chalkboard-teacher icon1"></i>
+                      </td>
+                      <td><span class="a">Mr.Alex</span></td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <!-- class row3 -->
+      <div class="row result">
+        <div class="col-md-3 col-sm-6 age1218 Sun">
+          <div class="product-grid6 age1218 Sun">
+            <a href="classinfo.html" class="fill-div age711 Sun">
+              <div class="product-image6 age1218 Sun">
+                <img class="pic-1" src="image/classimg10.png">
+              </div>
+              <div class="product-content age1218 Sun"
+                   style="background-color: white; border:1px solid #f4f4f5;">
+                <h3 class="title">Magic Carpet</h3>
+                <center>
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-child icon"></i></td>
+                      <td><span class="a">Age: 12 to 18</span></td>
+
+                      <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                      <td><span class="a">Rama 9</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fas fa-clock icon"></i></td>
+                      <td><span class="a">Sunday 4-5pm</span></td>
+
+                      <td style="padding-left: 10px;"><i class="fas fa-chalkboard-teacher icon1"></i>
+                      </td>
+                      <td><span class="a">Ms.Ebba</span></td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 age1218 Sat">
+          <div class="product-grid6 age1218 Sat">
+            <a href="classinfo.html" class="fill-div">
+              <div class="product-image6 age1218 Sat">
+                <img class="pic-1" src="image/classimg11.jpg">
+              </div>
+              <div class="product-content age1218 Sat"
+                   style="background-color: white; border:1px solid #f4f4f5;">
+                <h3 class="title">Pulley Play</h3>
+                <center>
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-child icon"></i></td>
+                      <td><span class="a">Age: 12 to 18</span></td>
+
+                      <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                      <td><span class="a">Rama 9</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fas fa-clock icon"></i></td>
+                      <td><span class="a">Saturday 4-5pm</span></td>
+
+                      <td style="padding-left: 10px;"><i class="fas fa-chalkboard-teacher icon1"></i>
+                      </td>
+                      <td><span class="a">Mr.Steven</span></td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 age03 Sat">
+          <div class="product-grid6 age03 Sat">
+            <a href="classinfo.html" class="fill-div">
+              <div class="product-image6 age03 Sat">
+                <img class="pic-1" src="image/classimg3.jpg">
+              </div>
+              <div class="product-content age03 Sat"
+                   style="background-color: white; border:1px solid #f4f4f5;">
+                <h3 class="title">Secret way</h3>
+                <center>
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-child icon"></i></td>
+                      <td><span class="a">Age: 0 to 3</span></td>
+
+                      <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                      <td><span class="a">Rama 9</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fas fa-clock icon"></i></td>
+                      <td><span class="a">Saturday 4-5pm</span></td>
+
+                      <td style="padding-left: 10px;"><i class="fas fa-chalkboard-teacher icon1"></i>
+                      </td>
+                      <td><span class="a">Ms.Lina</span></td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 filterDiv 12to18 Sun">
+          <div class="product-grid6 12to18 Sun">
+            <a href="classinfo.html" class="fill-div">
+              <div class="product-image6 12to18 Sun">
+                <img class="pic-1" src="image/classimg12.jpg">
+              </div>
+              <div class="product-content 12to18 Sun"
+                   style="background-color: white; border:1px solid #f4f4f5;">
+                <h3 class="title">Their Compasses</h3>
+                <center>
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-child icon"></i></td>
+                      <td><span class="a">Age: 12 to 18</span></td>
+
+                      <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                      <td><span class="a">Rama 9</span></td>
+                    </tr>
+                    <tr>
+                      <td><i class="fas fa-clock icon"></i></td>
+                      <td><span class="a">Monday 4-5pm</span></td>
+
+                      <td style="padding-left: 10px;"><i class="fas fa-chalkboard-teacher icon1"></i>
+                      </td>
+                      <td><span class="a">Mr.Paul</span></td>
+                    </tr>
+                  </table>
+                </center>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="moreclass">
+            <button type="button" class="btn btn-primary classm"><a class="readmore" href="#">See more
+              classes</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </article>
+</section>
+
+<!-- Footer -->
+<section id="footer">
+  <div class="container">
+    <div class="row text-center text-xs-center text-sm-left text-md-left">
+      <div class="col-xs-12 col-sm-4 col-md-1"></div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5>Parents</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="classes.html"><i class="fa fa-angle-double-right"></i>Find a class</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Birthday Parties/Playdate</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Send Gift Cards</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>DIY Activity</a></li>
+          <li><a href="faqs.html"><i class="fa fa-angle-double-right"></i>F.A.Q</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Login</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Sign up</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5>Coach</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Our Coach</a></li>
+          <li><a href="coach.html"><i class="fa fa-angle-double-right"></i>Become Coach</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Nominate Coach</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Login</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Sign up</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <h5>Company</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="AboutUs.html"><i class="fa fa-angle-double-right"></i>About us</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Our Approach</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Team</a></li>
+          <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Careers</a></li>
+          <li><a href="newSTEM.html"><i class="fa fa-angle-double-right"></i>Blog</a></li>
+          <li><a href="contactUs.html" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Contact
+            us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
+        <ul class="list-unstyled list-inline social text-center">
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-google-plus-g"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
+      </hr>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+        <p class="h6">&copy Copyright 2019 STEM.com</p>
+      </div>
+      </hr>
+    </div>
+  </div>
+</section>
+<!-- ./Footer -->
+<!--live chat-->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5c3225057a79fc1bddf37b5c/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<!-- CSS -->
+<link rel="stylesheet" href="classesCss.css">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="footerCss.css">
+<!--filter script-->
+<script>
+    // season_slider
+    $("#season_slider").ionRangeSlider({
+        skin: "round",
+        type: "double",
+        values: [
+            "spring", "summer", "autumn", "winter"
+        ],
+        from: 1,
+        to: 10,
+        onChange: function (data) {
+            console.dir(data);
+        }
+    });
+    // price_slider
+    $("#price_slider").ionRangeSlider({
+        skin: "round",
+        type: "double",
+        from: 500,
+        to: 1000,
+        min: 200,
+        max: 2000,
+        onChange: function (data) {
+            console.dir(data);
+        }
+    });
+    //time_slider
+    $("#time_slider").ionRangeSlider({
+        skin: "round",
+        type: "double",
+        from: 60,
+        to: 90,
+        min: 30,
+        max: 120,
+        postfix: "mins",
+    });
+    //slider method
+    ageArr = [];
+    $("#demo_10").ionRangeSlider({
+        skin: "round",
+        type: "double",
+        // grid: true,
+        min: 0,
+        max: 18,
+        from: 5,
+        to: 10,
+        max_postfix: "+",
+        // prefix: "Age: ",
+        // postfix: " years",
+        onFinish: function (data) {
+            ageArr.splice(0, ageArr.length);
+            // fired on pointer release
+            console.log("onFinish = ")
+            console.log(data.from);
+            console.log(data.to)
+            //condition here age 03 46 711 1218
+            for (let i = data.from; i < data.to; i++) {
+                if (i >= 0 && i <= 3) {
+                    ageArr.push("age03")
+                }
+                if (i >= 4 && i <= 6) {
+                    ageArr.push("age46")
+                }
+                if (i >= 7 && i <= 11) {
+                    ageArr.push("age711")
+                }
+                if (i >= 12 && i <= 18) {
+                    ageArr.push("age1218")
+                }
+            }
+            console.log(ageArr);
+            change();
+
+        },
+    });
+
+    function change() {
+        console.log("change");
+        var ageCbs = this.ageArr;
+        console.log("ageCbs = ");
+        console.log(ageCbs);
+        var dayCbs = document.querySelectorAll(".dayFilter input[type='checkbox']");
+        var filters = {
+            age: ageCbs,
+            // getClassOfCheckedCheckboxes(ageCbs),
+            day: getClassOfCheckedCheckboxes(dayCbs)
+        };
+
+        console.log("filter = ");
+        console.log(filters.age);
+        console.log(filters.day);
+        filterResults(filters);
+    }
+
+    function getClassOfCheckedCheckboxes(checkboxes) {
+        var classes = [];
+
+        if (checkboxes && checkboxes.length > 0) {
+            for (var i = 0; i < checkboxes.length; i++) {
+                var cb = checkboxes[i];
+
+                if (cb.checked) {
+                    classes.push(cb.getAttribute("rel"));
+                }
+            }
+        }
+        console.log("classes = " + classes);
+        return classes;
+    }
+
+    function filterResults(filters) {
+        var rElems = document.querySelectorAll(".result div");
+        var hiddenElems = [];
+        console.log("rElems" + rElems + rElems.length)
+        if (!rElems || rElems.length <= 0) {
+            return;
+        }
+
+        for (var i = 0; i < rElems.length; i++) {
+            var el = rElems[i];
+            if (filters.age.length > 0) {
+                var isHidden = true;
+
+                for (var j = 0; j < filters.age.length; j++) {
+                    var filter = filters.age[j];
+
+                    if (el.classList.contains(filter)) {
+                        isHidden = false;
+                        // break;
+                    }
+                }
+
+                if (isHidden) {
+                    hiddenElems.push(el);
+                }
+            }
+
+            if (filters.day.length > 0) {
+                var isHidden = true;
+
+                for (var j = 0; j < filters.day.length; j++) {
+                    var filter = filters.day[j];
+
+                    if (el.classList.contains(filter)) {
+                        isHidden = false;
+                        break;
+                    }
+                }
+
+                if (isHidden) {
+                    hiddenElems.push(el);
+                }
+            }
+        }
+
+        for (var i = 0; i < rElems.length; i++) {
+            rElems[i].style.display = "block";
+        }
+
+        if (hiddenElems.length <= 0) {
+            return;
+        }
+
+        for (var i = 0; i < hiddenElems.length; i++) {
+            hiddenElems[i].style.display = "none";
+        }
+        console.log("hiddenElems" + hiddenElems)
+    }
+</script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#tick").click(function () {
+            $("#tick1").toggle();
+        });
+    });
+
+    $(document).ready(function () {
+        $("#tickk").click(function () {
+            $("#tickk1").toggle();
+        });
+    });
+
+    $(document).ready(function () {
+        $("#tickkk").click(function () {
+            $("#tickkk1").toggle();
+        });
+    });
+</script>
+</html>

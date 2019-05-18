@@ -1,0 +1,444 @@
+/*$bg-qray: #f4f4f5;
+$bg-white: #feffff;
+$main-green: #5bc0af;
+$main-blue: #7bbfe6;
+$orange-color: #e79746;
+$pink-color: #e57f7d;
+$yellow-color: #faeaab;*/
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1');
+
+html,body {
+	text-align: center;
+	font-family: 'Gothic A1', sans-serif;
+	background: #f4f4f5;
+}
+/*-----*/
+a.slide-toggle {
+	z-index: 10;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	text-align: left;
+	margin: 20px;
+	text-decoration: none;
+}
+a.slide-toggle i {
+	margin-left: 40px;
+	margin-bottom: 20px;
+	color: black;
+}
+img#logo {
+	/*margin-top: 110px;
+	margin-bottom: 145px;
+	width: 500px;
+	height: 500px;*/
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	/*border: 3px white outset;*/
+	display: none;
+	box-shadow: 0 0 10px gray;
+	transition: 0.3s;
+}
+img#logo:hover {
+	/*border-style: inset;*/
+	box-shadow: 0 0 2px gray;
+
+}
+.box-inner ul li a:hover {
+  color: black;
+}
+.box-inner ul {
+    list-style: none; 
+    text-align: left;
+}
+.box-inner ul li {
+  display: block;
+}
+.box-inner ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: gray;
+  text-transform: uppercase;
+}
+.box-inner ul li a,
+.box-inner ul li a:after,
+.box-inner ul li a:before {
+  transition: all .5s;
+}
+    .box{
+        float:left;
+        overflow: hidden;
+        background: rgba(255,255,255,0.2);
+        display: none;
+        position: fixed;
+        z-index: 9;
+        top: 120px;
+        left: 0px;
+        text-align: left;
+    }
+    /* Add padding and border to inner content
+    for better animation effect */
+    .box .box-inner{
+        width: 140px;
+        padding: 10px; 
+        color:#fff;
+      }
+.box-inner ul li a:after {
+	content: '';
+  	display: block;
+ 	right: 0;
+	width: 0;
+	position: absolute;
+	border-bottom: 3px gray solid;
+	/*height: 1px;*/
+	text-align: left;
+}
+.box-inner ul li a:hover:after {
+	width: 70px;
+	left: 60px;
+}
+/*-----*/
+img.up, img.down {
+                position: fixed;
+                z-index: 10;
+                bottom: 0px;
+                right: 0px;
+                text-align: right;
+                display: none;
+                overflow: hidden;
+        }
+/*-----*/
+div#tapsteamBlog, div#findclass{
+	margin: 10px 0 10px 0;
+	padding: 30px 0 15px 0;
+	max-height: 768px;
+}
+div#tapbeOurCoach {
+	margin: 10px 0 10px 0;
+	padding: 20px 0 15px 0;
+	max-height: 768px;
+}
+div#tapsteamBlog {
+	background-color: white;
+}
+div#findclass{
+	border-top: 5px solid #f4f4f5;
+	border-right: 10px solid #f4f4f5;
+	border-left: 10px solid #f4f4f5;
+	background-color: white;
+}
+a.h1{
+	color: #5bc0af;
+	font-size: 50px;
+	text-decoration: none;
+	font-weight: bold;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+/*-------------Find a class---------------*/
+p.c {
+	/*text-align: right;*/
+	color: #5bc0af;
+	margin: 0;
+	padding: auto;
+	/*font-size: 14px;*/
+}
+
+/*----------------boom-----------------*/
+
+/*classes*/
+.fill-div {
+  color: black;
+  
+}
+.fill-div:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.icon {
+  color: #5bc0af;
+}
+
+.icon1 {
+  color: #e57f7d;
+}
+
+span.a {
+  float: left;
+  font-size: 13px;
+}
+
+.classm {
+  background-color: #5bc0af !important;
+  border-style: none;
+  width: 40%;
+  height: 40px;
+}
+.classm:hover {
+  background-color: #e57f7d !important;
+}
+
+.moreclass{
+  display: flex;
+  justify-content: center;
+}
+
+/*----------id----------*/
+#tick1, #tickk1, #tickkk1 {
+	display: none;
+}
+
+/*div*/
+.product-grid6,.product-grid6 .product-image6{
+	overflow: hidden;
+}
+.product-grid6{
+	font-family:'Open Sans',sans-serif;
+	text-align: center;
+	position: relative;
+	transition: all .5s ease 0s
+}
+.product-grid6:hover{
+	box-shadow:0 0 10px gray;
+} /*changeee*/
+.product-grid6 .product-image6 a{
+	display:block;
+}
+.product-grid6 .product-image6 img{
+	width: 100%;
+	height: auto;
+	transition: all .5s ease 0s;
+}
+.product-grid6:hover .product-image6 img{
+	transform: scale(1.1);
+}
+.product-grid6 .product-content{
+	padding: 12px 12px 15px;
+	transition: all .5s ease 0s;
+}
+.product-grid6 .title{
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin: 0 0 10px;
+	transition: all .3s ease 0s;
+}
+.product-grid6 .title a{
+	color: #000;
+}
+.product-grid6 .title a:hover{
+	color: #fff;
+}
+.product-grid6 .price{
+	font-size: 18px;
+	font-weight: 600;
+	color: #2e86de;
+}
+.product-grid6 .price span{
+	color: #999;
+	font-size: 15px;
+	font-weight: 400;
+	text-decoration: line-through;
+	margin-left: 7px;
+	display: inline-block;
+}
+
+@media only screen and (max-width:1200px){.product-grid6 .rating{margin:0}
+}
+/*-------------Peary Slide----------------*/
+.video {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+/*.column {
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}*/
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: ;
+  clear: both;
+  display: table;
+}
+
+div.carousel-caption {
+	color: white;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: left;
+	padding: 20px;
+	/*justify-content: center;*/
+	min-height: 150px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+div.carousel-caption > p {
+	font-size: 22px;
+}
+div.carousel-caption > h3 {
+	font-size: 30px;
+}
+.carousel-inner > .carousel-item > .view {
+	height: 450px;
+}
+
+/*-------------Be Our Coarch-------------*/
+#tapbeOurCoach > .container > .row > .coach{
+	margin: 10px 0;
+	line-height: 1.5;
+}
+#tapbeOurCoach > .container > .row > .coach >.card {
+	min-height: 490px;
+}
+.coach .card ul li {
+	list-style: none;
+	text-align: left; 
+}
+/*p.info{
+	text-align: left; 
+}*/
+
+#tapbeOurCoach > .container > .row > .coach-contain {
+	margin: 10px 0;
+	padding: 1.25rem;
+	border-left: 15px #f4f4f5 solid;
+	border-right: 15px #f4f4f5 solid;
+	text-align: left;
+	
+}
+#tapbeOurCoach > .container > .row > .coach-contain div.daja {
+	margin-top: 35%;
+	margin-bottom: 35%;
+}
+#tapbeOurCoach > .container > .row > .coach-contain ul li {
+	list-style: none; 
+	padding: 5px;
+	/*vertical-align: middle;*/
+}
+#tapbeOurCoach > .container > .row > .coach-contain:hover {
+	background-color: white;
+	/*border-left: 5px #f4f4f5 solid;*/
+}
+#tapbeOurCoach > .container > .row > .coach > .card {
+	background-color: #f4f4f5;
+	transition: all 0.4s ease;
+}
+#tapbeOurCoach > .container > .row > .coach > .card:hover {
+	background-color: white;
+}
+#tapbeOurCoach > .container > .row > .coach > .card > .card-body > .card-title{
+	color: #7bbfe6;
+}
+#tapbeOurCoach > .container > .row > .coach > .card > img {
+	width: 350px;
+	height: 233px;
+}
+
+/*--------------stem blog----------------*/
+#tapsteamBlog > .container > .row > div {
+	margin: 10px 0;
+}
+#tapsteamBlog > .container > .row > div.blog1 {
+	border-right: 2.5px white solid;
+	/*overflow: hidden;*/
+}
+#tapsteamBlog > .container > .row > div.blog2 {
+	border-left: 2.5px white solid;
+	/*overflow: hidden;*/
+}
+#mainblog1 {
+	position:relative;
+	height: 300px;
+	background: url('http://modellist-id.com/wp-content/uploads/2018/04/o-KIDS-PUZZLES-facebook.jpg');
+	background-repeat: no-repeat;
+  	background-size: cover;	
+  	transition: 0.5s;
+  	border-top-right-radius: 7.5px;
+}
+#mainblog2 {
+	position:relative;
+	height: 300px;
+	background: url('https://grangeriowa.org/wp-content/uploads/2017/12/Bricks-4-Kids-0030-resized-image-500x300.jpg');
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	transition: 0.5s;
+  	border-top-right-radius: 7.5px;
+}
+.new-block {
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0.8;
+}
+.main-block-contain {
+	position: absolute;
+    bottom: 0px;
+	padding: 15px;
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	min-height: 90px;
+	width: 100%;
+}
+#mainblog1:hover ,#mainblog2:hover {
+	-webkit-box-shadow: 0px 10px 0px -1px #5bc0af;
+    -moz-box-shadow: 0px 10px 0px -1px #5bc0af;
+    box-shadow: 0px 10px 0px -1px #5bc0af;
+}
+#tapsteamBlog > .container > .row > div > a > div.subblog {
+	height: 120px;
+	/*background-color: lightgray;*/
+	/*border-top: 10px white solid;*/
+	color: black;
+	text-align: left;
+	padding: 15px;
+	margin-bottom: 5px;
+
+	transition: 0.5s;
+}
+#tapsteamBlog > .container > .row > div > a > div.subblog:hover {
+	-webkit-box-shadow: 0px 5px 0px -1px #5bc0af;
+    -moz-box-shadow: 0px 5px 0px -1px #5bc0af;
+    box-shadow: 0px 5px 0px -1px #5bc0af;
+}
+/*#tapsteamBlog > .container > .row > div > a > div.subblog:after {
+	content: '';
+  	display: block;
+	right: 0;
+	width: 0;
+	position: absolute;
+	border-bottom: 5px #5bc0af solid;
+	transition: width 0.5s ease-out;
+	-webkit-transition: width 0.5s ease-out;
+}
+#tapsteamBlog > .container > .row > div > a > div.subblog:hover:after {
+	width: 100%;
+	left: 15px;
+}*/
+#tapsteamBlog > .container > .row > div > a {
+	text-decoration: none;
+}
+/*-------------------------------------------*/
+button {
+	border-radius: 7.5px;
+}
+#adv-search > div > .btn-group > button {
+	background-color: #5bc0af;
+	color: white;
+	border: 0;
+}
+#adv-search > div > .btn-group > button:hover {
+	background-color: #e57f7d;
+}
+

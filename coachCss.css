@@ -1,0 +1,169 @@
+/*coach*/
+
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1');
+body {
+    font-family: 'Gothic A1', sans-serif;
+}
+h1#coach {
+	font-size: 40px;
+	color: #5bc0af;
+	text-align: center;
+	
+}
+
+.video {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+a.bt {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.button {
+	border-radius: 50px;
+	background-color: #E79746;
+	border: 1px solid #f0f4ba;
+  border-radius: 7.5px;
+	font-size: 18px;
+	cursor: pointer;
+	padding: 15px;
+}
+
+.button:hover {
+	background-color: #e57f7d !important;
+
+}
+
+div.col-md-6  {
+	font-size: 30px;
+	font-stretch: expanded;
+	background: #fff;
+	color: #E57F7D;
+}
+/*picture slide*/
+.carousel-item img{
+  width: 100%;
+  height: 550px;
+  margin-bottom: 58px;
+
+}
+
+/*6 columns*/
+.sevicebox{
+ text-align: center;
+  
+}
+
+
+.servicebox img{
+  width: 340px;
+  height: 250px;
+}
+.servicebox .service-content{
+  position: relative;
+  background: #5bc0af;
+  color: #feffff;
+  padding: 50px 30px 30px;
+}
+.servicebox .service-icon{
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: #faeaab;
+  border-radius: 10px;
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right:0;
+  margin: auto;
+  transform: rotate(45deg);
+
+}
+.servicebox .service-icon i{
+  font-size: 30px;
+  line-height: 70px;
+  text-align: center;
+  color: #00a996;
+  transform: rotate(-45deg);
+
+}
+.servicebox .title{
+ 
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-transform: uppercase;
+  text-align: center;
+  border-bottom: solid 2px white;
+  display: inline;
+  padding-bottom: 3px;
+
+
+}
+
+
+ .description{
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.box .join{
+  display: inline-block;
+  padding: 11px 80px;
+  border-radius: 7.5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #feffff ;
+  background: #e79746;
+  text-transform: capitalize;
+  transition: all 0.5s ease 0s;
+
+}
+.box .join:hover{
+  color: #feffff;
+  background: #E57F7D;
+  text-decoration: none;
+}
+
+.download{
+  display: inline-block;
+  padding: 7px 20px;
+  border: 1px solid #f0f4ba;
+  border-radius: 7.5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #feffff ;
+  background: #e79746;
+  text-transform: capitalize;
+  transition: all 0.5s ease 0s;
+
+}
+ .download:hover{
+  color: #feffff;
+  background: #E57F7D;
+  text-decoration: none;
+}
+
+
+.servicebox.middle .service-content{
+  padding: 30px 30px 50px;
+
+}
+.servicebox.middle .service-icon{
+  bottom: -35px;
+  top: auto;
+  
+}
+div.carousel-caption {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  height: 190px;
+  background: rgba(0,0,0, 0.6);
+  color: black;
+}

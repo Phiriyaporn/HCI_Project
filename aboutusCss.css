@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1');
+body {
+	font-family: 'Gothic A1', sans-serif;
+}
+.back {
+  background-color: #f4f4f5;
+  padding-top: 40px;
+  margin-bottom: 0;
+}
+.container.white {
+  padding-top: 18px;
+  padding-bottom: 40px;
+}
+
+div.toppic {
+  position: relative; 
+  max-width: 100%; /* Maximum width */
+  margin: 0px auto; /* Center it */
+}
+
+.toppic .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  width: 100%; /* Full width */
+  padding: 0px; /* Some padding */
+}
+
+span#blogTitle {
+	color: #fff;
+	font-weight: 800;
+	font-size: 70px;
+}
+
+p.topic {
+	color: #7bbfe6;
+	font-size: 34px;
+	font-weight: 800;
+	text-align: center;
+  /*margin-top: 30px;*/
+}
+p.text-topic {
+  color: #7bbfe6;
+  font-size: 34px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.img {
+	padding-right: 10px;
+}
+
+div.pic {
+	display: flex;
+	justify-content: center;
+	/*padding-top: 40px;*/
+}
+
+/*--------------pop up--------------*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 50px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 0s ease-in-out;
+  z-index: 0;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+/*--------------pop up--------------*/
+
+p.toy {
+	/*font-weight: bold;*/
+	text-align: center;
+	padding-top: 10px;
+}
+
+span.name {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+span.name a {
+	color: #e79746; /*orange*/
+}
+
+span.name a:hover {
+	color: #e57f7d;
+	text-decoration: none;
+}
+
+span.job {
+	color: grey;
+	font-size: 14px;
+}
+
+.teampic {
+	border-radius: 5px;
+	margin-left: 15px;
+}
+
+.defi{
+	font-size: 18px;
+}
+
+span.career {
+	font-weight: 600;
+}
+
+span.career a {
+	color: #e79746;
+}
+
+span.career a:hover {
+	color: #e57f7d;
+	text-decoration: none;
+}
+
+.irs--round .irs-bar {
+  background-color: #dcfafa;
+}
+.irs--round .irs-handle {
+  border: 4px solid gray;
+}
