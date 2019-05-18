@@ -1,2 +1,0 @@
-# Albedo
-Database II Project
