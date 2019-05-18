@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+</head>
+<body id="homepage">
+		<header>
+			<a href="#"><img class="home" src="https://cdn5.vectorstock.com/i/1000x1000/68/59/baby-care-logo-design-emblem-with-kid-faces-vector-17476859.jpg" /></a>
+			<a href="#"><i class="fas fa-home"></i></a>
+			<a href="#tapfindAclass">Find A Class</a>
+			<a href="#tapbeOurCoach">Be Our Coach</a>
+			<a href="#tapsteamBlog">Steam Blogs</a>
+			<a href="#tapaboutUs">About Us</a>
+			<a href="#tapcontactUs">Contact Us</a>
+		</header>
+	<div class="container">
+		
+		<img id="logo" src="https://cdn5.vectorstock.com/i/1000x1000/68/59/baby-care-logo-design-emblem-with-kid-faces-vector-17476859.jpg" />
+<hr>
+<!-- <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        });
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 051 css*/
+        .jssorb051 .i {position:absolute;cursor:pointer;}
+        .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+        .jssorb051 .i:hover .b {fill-opacity:.7;}
+        .jssorb051 .iav .b {fill-opacity: 1;}
+        .jssorb051 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        Loading Screen
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/001.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/002.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/003.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/004.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/005.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/006.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/007.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/008.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/009.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/010.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/011.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/012.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator
+        <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <!-- #endregion Jssor Slider End --> 
+	
+	<div class="row video">
+			<div class="col-md-10">
+				<!--Carousel Wrapper-->
+				<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+	    			<!--Indicators-->
+	   				<ol class="carousel-indicators">
+	        			<li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+	        			<li data-target="#carousel-example-2" data-slide-to="1"></li>
+	        			<li data-target="#carousel-example-2" data-slide-to="2"></li>
+	    			</ol>
+	    			<!--/.Indicators-->
+	    			<!--Slides-->
+	    			<div class="carousel-inner" role="listbox">
+		        		<div class="carousel-item active">
+			            	<div class="view">
+			                	<img class="d-block w-100 " src="image/abc4.jpg" alt="First slide" width="850" height="530">
+			                	<div class="mask rgba-black-light"></div>
+			            	</div>
+			            	<div class="carousel-caption">
+			                	<h3 class="h3-responsive">Light mask</h3>
+			                	<p>First text</p>
+			                	<button type="button" class="btn btn-outline btn-warning" target="_blank"><a class="bt" href="app.html">APPLY NOW</a></button>
+			            	</div>
+		        		</div>
+        				<div class="carousel-item">
+				            <!--Mask color-->
+				            <div class="view">
+				               <img class="d-block w-100 " src="image/abc10.jpg" alt="Second slide" width="850" height="530">
+				                <div class="mask rgba-black-strong"></div>
+				            </div>
+				            <div class="carousel-caption">
+				                <h3 class="h3-responsive">Strong mask</h3>
+				                <p>Secondary text</p>
+				                <button type="button" class="btn btn-outline btn-warning" target="_blank"><a class="bt" href="app.html">APPLY NOW</a></button>
+				            </div>
+        				</div>
+				        <div class="carousel-item">
+				            <!--Mask color-->
+				            <div class="view">
+				                <img class="d-block w-100" src="image/acb11.jpg" alt="Third slide" width="850" height="530">
+				                <div class="mask rgba-black-slight"></div>
+				            </div>
+				            <div class="carousel-caption">
+				                <h3 class="h3-responsive">Slight mask</h3>
+				                <p>Third text</p>
+				                <button type="button" class="btn btn-outline btn-warning" target="_blank"><a class="bt" href="app.html">APPLY NOW</a></button>
+				            </div>
+				        </div>
+    				</div>
+				    <!--/.Slides-->
+				    <!--Controls-->
+				    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+				        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				        <span class="sr-only">Previous</span>
+				    </a>
+				    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+				        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				        <span class="sr-only">Next</span>
+				    </a>
+				    <!--/.Controls-->
+				</div>
+				<!--/.Carousel Wrapper-->	
+			</div>
+		</div>
+<!---------- Find a class -------- -->
+<hr>
+		<div id="tapfindAclass">
+		 <a href="#" class="h1">Find A Class Near You</a>
+		 <br>
+		 <br>
+		 <br>
+		 <div class="row">
+		 	<div class="col-md-2"></div>
+		 	<div class="col-md-8">
+				<div class="input-group" id="adv-search">
+				    <input type="text" class="form-control" placeholder="Please enter the Zip Code (ex.12130)"/>
+				    <div class="input-group-btn">
+				        <div class="btn-group" role="group">
+				            <button type="button" class="btn btn-primary subbt"><span><i class="fas fa-search"></i></span></button>
+				        </div>
+				    </div> 
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		 </div>
+		 <br>
+		 <br>
+		 <br>
+		 <h1 align="left" style="padding-bottom: 30px;">Classes <a class="plus" href="#" style=""><i class="fas fa-plus"></i></a></h1> 
+				<div class="row">
+			        <div class="col-md-3 col-sm-6">
+			            <div class="product-grid6">
+			            <a href="classinfo.html" class="fill-div">
+			                <div class="product-image6">
+			                	<img class="pic-1" src="image/classimg.jpg">
+			          		</div>
+			                <div class="product-content" style="background-color: white;">
+			                    <h3 class="title">Class Name</h3>
+			                    <center><table>
+									<tr>
+										<td><i class="fas fa-child icon"></i></td>
+			 							<td><span class="a">Age: 4 to 6</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+			 							<td><span class="a">Rama 9</span></td> 
+									</tr>
+									<tr>
+										<td><i class="fas fa-clock icon"></i></td>
+			 							<td><span class="a">Monday 4-5pm</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+			 							<td><span class="a">Miss Mini</span></td>
+									</tr>
+								</table></center>
+			                </div>
+			            </a>
+			            </div>
+			        </div>
+			        <div class="col-md-3 col-sm-6">
+			            <div class="product-grid6">
+			            <a href="classinfo.html" class="fill-div">
+			                <div class="product-image6">
+			                	<img class="pic-1" src="image/classimg2.png">
+			          		</div>
+			                <div class="product-content" style="background-color: white;">
+			                    <h3 class="title">Class Name</h3>
+			                    <center><table>
+									<tr>
+										<td><i class="fas fa-child icon"></i></td>
+			 							<td><span class="a">Age: 4 to 6</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+			 							<td><span class="a">Rama 9</span></td> 
+									</tr>
+									<tr>
+										<td><i class="fas fa-clock icon"></i></td>
+			 							<td><span class="a">Monday 4-5pm</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+			 							<td><span class="a">Miss Mini</span></td>
+									</tr>
+								</table></center>
+			                </div>
+			            </a>
+			            </div>
+			        </div>
+			        <div class="col-md-3 col-sm-6">
+			            <div class="product-grid6">
+			            <a href="classinfo.html" class="fill-div">
+			                <div class="product-image6">
+			                	<img class="pic-1" src="image/classimg3.jpg">
+			          		</div>
+			                <div class="product-content" style="background-color: white;">
+			                    <h3 class="title">Class Name</h3>
+			                    <center><table>
+									<tr>
+										<td><i class="fas fa-child icon"></i></td>
+			 							<td><span class="a">Age: 4 to 6</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+			 							<td><span class="a">Rama 9</span></td> 
+									</tr>
+									<tr>
+										<td><i class="fas fa-clock icon"></i></td>
+			 							<td><span class="a">Monday 4-5pm</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+			 							<td><span class="a">Miss Mini</span></td>
+									</tr>
+								</table></center>
+			                </div>
+			            </a>
+			            </div>
+			        </div>
+			        <div class="col-md-3 col-sm-6">
+			            <div class="product-grid6">
+			            <a href="classinfo.html" class="fill-div">
+			                <div class="product-image6">
+			                	<img class="pic-1" src="image/classimg4.jpg">
+			          		</div>
+			                <div class="product-content" style="background-color: white;">
+			                    <h3 class="title">Class Name</h3>
+			                    <center><table>
+									<tr>
+										<td><i class="fas fa-child icon"></i></td>
+			 							<td><span class="a">Age: 4 to 6</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+			 							<td><span class="a">Rama 9</span></td> 
+									</tr>
+									<tr>
+										<td><i class="fas fa-clock icon"></i></td>
+			 							<td><span class="a">Monday 4-5pm</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+			 							<td><span class="a">Miss Mini</span></td>
+									</tr>
+								</table></center>
+			                </div>
+			            </a>
+			            </div>
+			        </div>
+			    </div>
+<!-- -------- Be Our Coach -------- -->
+		<div id="tapbeOurCoach">
+			
+				<br>
+			<div class="row" style="padding-right: 15px;">
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
+					<a href="#" class="h1">Become our Coach</a>
+					<br>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/zIIFfnw6vak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-6">
+					<div class="row" style="margin-top: 150px;"></div>
+					<div class="row">
+						<div class="col-md-3"></div>
+						<div class="col-md-3"><button type="button" class="btn apply"> APPLY NOW! </button></div>
+						<div class="col-md-3"></div>
+					</div>
+					
+				</div>
+			</div>
+		 	
+		</div>
+<!-- -------- Blogs -------- -->
+<br>
+		<div id="tapsteamBlog">
+		 <a href="#" class="h1">Steam Blogs</a>
+		 
+		 		<div class="row block">
+		 			<div class="col-md-3">
+		 				<img style="margin-bottom: 20px; margin-top: 20px;" class="img-circle" src="http://placehold.it/150x150" />
+		 			</div>
+					<div class="col-md-9">
+						<h4 class="blockname">Blog Title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						
+						<div class="div1"><button type="button" class="btn btn-primary readm"><a class="readmore" href="block.html">Read more</a></button></div>
+					</div>
+				</div>
+				<div class="row block">
+					
+					<div class="col-md-9">
+						<h4 class="blockname">Blog Title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+						
+						<div class="div1"><button type="button" class="btn btn-primary readm"><a class="readmore" href="block.html">Read more</a></button></div>
+					</div>
+					<div class="col-md-3">
+		 				<img style="margin-bottom: 20px; margin-top: 20px; class="img-circle" src="http://placehold.it/150x150" />
+		 			</div>
+				</div>
+			<br>
+
+		</div>
+	
+	    <div class="footer">
+			<a class="icon" href="#"><img class="icon" src="img/arrow.gif" title="facebook" width="180" height="180"></a>
+		</div>
+		</div>
+	</div>
+	<!-- -------- footer -------- -->
+<!-- 		<footer style="background-color: #5bc0af; color: white; padding-top: 10px; margin-bottom: 0;">
+	      <div class="row">
+	        <div class="col-md-4">
+	          <p style="font-size: 18px"><b>Parents</b></p>
+	          <p>Find a class</p>
+	          <p>Birthday Parties/Playdate</p>
+	          <p>Send Gift Cards</p>
+	          <p>DIY Activity</p>
+	          <p>F.A.Q</p>
+	          <p>Login</p>
+	          <p>Sign Up</p>
+
+	        </div>
+	        <div class="col-md-4">
+	          <p style="font-size: 18px"><b>Coach</b></p>
+	          <p>Our Coach</p>
+	          <p>Become Coach</p>
+	          <p>Nominate Coach</p>
+	          <p>Login</p>
+	          <p>Sign up</p>
+	        </div>
+	        <div class="col-md-4">
+	          <p style="font-size: 18px"><b>Company</b></p>
+	          <p>About Us</p>
+	          <p>Our Approach</p>
+	          <p>Team</p>
+	          <p>Careers</p>
+	          <p>Blog</p>
+	          <p>Contact us</p>
+	        </div>
+	      </div>
+	    </footer> -->
+
+
+
+
+		<!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="homepage.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- Javascript -->
+	<script src="js.js" type="text/Javascript"></script>
+</body>
+</html>

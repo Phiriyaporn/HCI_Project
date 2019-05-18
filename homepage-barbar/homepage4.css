@@ -1,0 +1,204 @@
+html,body {
+	text-align: center;
+	font-family: proxima-nova, Arial, Helvetica, sans-serif;
+	background: #f4f4f5;
+}
+
+img#logo {
+	/*margin-top: 110px;
+	margin-bottom: 145px;
+	width: 500px;
+	height: 500px;*/
+	border-radius: 50%;
+	position: fixed;
+	width: 90px;
+	height: 90px;
+	z-index: 10;
+	top: 0px;
+	left: 0px;
+	text-align: left;
+	margin: 20px;
+	border-style: outset;
+}
+img#logo:hover {
+	border-style: inset;
+}
+
+/*-----*/
+img.up, img.down {
+                position: fixed;
+            /*  background-color: black;*/
+                /*width: 100%;*/
+                z-index: 10;
+                bottom: 0px;
+                right: 0px;
+                text-align: right;
+                display: none;
+                overflow: hidden;
+        }
+/*-----*/
+
+div#findclass{
+	border-top: 5px solid #f4f4f5;
+	/*border-bottom: 0px solid #f4f4f5;*/
+	border-right: 10px solid #f4f4f5;
+	border-left: 10px solid #f4f4f5;
+	background-color: white;
+	margin: 10px 0 10px 0;
+	padding: 10px 0 10px 0;
+}
+a.h1{
+	color: #5bc0af;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	padding-top: 15px;
+	font-size: 50px;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.h1find{
+	color: #5bc0af;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	padding-top: 15px;
+	font-size: 35px;
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+}
+
+/*-------------Find a class---------------*/
+/*a.plus {
+	margin-left: 900px;
+	color: #5bc0af;
+}*/
+p.c {
+	/*text-align: right;*/
+	color: #5bc0af;
+	margin: 0;
+	padding: auto;
+	/*font-size: 14px;*/
+}
+
+/*---------------------------- New Search Bar ------------------------------*/
+    .searchbar{
+    /*margin-bottom: 40px;*/
+    /*margin-top: auto;*/
+    height: 60px;
+    background-color: #5bc0af;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #5bc0af;
+    text-decoration: none;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    }
+    /*----------*/
+    .search_input::placeholder {
+	color: white;
+	opacity: 1; /* Firefox */
+	}
+	.search_input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: white;
+	}
+
+	.search_input::-ms-input-placeholder { /* Microsoft Edge */
+		color: white;
+	}
+	/*----------*/
+	div.container.h-100 {
+		text-align: right;
+	}
+/*---------------------------- New Search Bar ------------------------------*/
+/*h1 {
+	color: #5bc0af;
+	margin-top: 15px;
+}*/
+
+
+/*----------------boom-----------------*/
+
+/*classes*/
+.fill-div {
+  color: black;
+  
+}
+.fill-div:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.icon {
+  color: #5bc0af;
+}
+
+.icon1 {
+  color: #e57f7d;
+}
+
+span.a {
+  float: left;
+  font-size: 13px;
+}
+
+.classm {
+  background-color: #5bc0af !important;
+  border-style: none;
+  width: 40%;
+  height: 40px;
+}
+.classm:hover {
+  background-color: #e57f7d !important;
+}
+
+.moreclass{
+  display: flex;
+  justify-content: center;
+}
+
+/*div*/
+.product-grid6,.product-grid6 .product-image6{overflow:hidden}
+.product-grid6{font-family:'Open Sans',sans-serif;text-align:center;position:relative;transition:all .5s ease 0s}
+.product-grid6:hover{box-shadow:0 0 10px #e57f7d} /*changeee*/
+.product-grid6 .product-image6 a{display:block}
+.product-grid6 .product-image6 img{width:100%;height:auto;transition:all .5s ease 0s}
+.product-grid6:hover .product-image6 img{transform:scale(1.1)}
+.product-grid6 .product-content{padding:12px 12px 15px;transition:all .5s ease 0s}
+.product-grid6 .title{font-size:20px;font-weight:600;text-transform:capitalize;margin:0 0 10px;transition:all .3s ease 0s}
+.product-grid6 .title a{color:#000}
+.product-grid6 .title a:hover{color:#fff}
+.product-grid6 .price{font-size:18px;font-weight:600;color:#2e86de}
+.product-grid6 .price span{color:#999;font-size:15px;font-weight:400;text-decoration:line-through;margin-left:7px;display:inline-block}
+
+@media only screen and (max-width:1200px){.product-grid6 .rating{margin:0}
+}
