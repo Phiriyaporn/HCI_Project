@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</title>
+</head>
+<body>
+	<div class="container h-100">
+      <div class="d-flex justify-content-center h-100">
+        <div class="searchbar">
+          <input class="search_input" type="text" name="" placeholder="Search...">
+          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+    </div>
+	<style type="text/css">
+    .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #5bc0af;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #5bc0af;
+    text-decoration: none;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    }
+    .search_input::placeholder {
+	color: white;
+	opacity: 1; /* Firefox */
+	}
+	.search_input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: white;
+	}
+
+	.search_input::-ms-input-placeholder { /* Microsoft Edge */
+		color: white;
+	}
+	</style>
+    <!-- ---------- -->
+        <div id="content"> 
+          <a href="#nav"><span>Click Here</span></a>
+          <div class="expandable" id="nav">
+            <p>Cum enim magna parturient ac elementum, tincidunt tempor ac lectus platea placerat. Eros dis lectus. Ut aliquam. Porttitor risus mattis mauris lacus a, aliquam augue cras elementum! Adipiscing, vel ridiculus diam pellentesque sociis habitasse pellentesque, augue parturient sed elementum aenean. Tincidunt tristique.</p>
+          </div>
+          <a href="#nav2"><span>Click Here</span></a>
+          <div class="expandable" id="nav2">
+            <p>Cum enim magna parturient ac elementum, tincidunt tempor ac lectus platea placerat. Eros dis lectus. Ut aliquam. Porttitor risus mattis mauris lacus a, aliquam augue cras elementum! Adipiscing, vel ridiculus diam pellentesque sociis habitasse pellentesque, augue parturient sed elementum aenean. Tincidunt tristique.</p>
+          </div>
+        </div> 
+    <style>
+        .expandable {
+          background: #fff;
+          overflow: hidden;
+
+          transition: all .5s ease-in-out;
+          line-height: 0;
+          padding: 0 1em;
+          color: transparent;
+        }
+         
+        .expandable:target {
+          line-height: 1.5;
+          padding-top: 1em;
+          padding-bottom: 1em;
+          color: black;
+        }
+    </style>
+    <!-- ---------- -->
+    <div id="go-down">
+            <a id="arrow-down" href="#"><img class="down" src="img/arrow-down.gif" title="go down" width="180" height="180"></a>
+    </div>
+    <div id="go-up">
+        <a id="arrow-up" href="#"><img class="up" src="img/arrow-up.gif" title="go to top" width="180" height="180"></a>
+    </div>
+    <style>
+        img.up, img.down {
+                position: fixed;
+            /*  background-color: black;*/
+                /*width: 100%;*/
+                z-index: 10;
+                bottom: 0px;
+                right: 0px;
+                text-align: right;
+                display: none;
+                overflow: hidden;
+        }
+    </style>
+
+    <!-- ---------- -->
+	<!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+<!-- ---- fading ---- -->
+    <script type="text/javascript">
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('.up').fadeIn(500);    // Fade in the arrow
+                $('.down').fadeOut(200);
+            } else {
+                $('.up').fadeOut(200);      // Else fade out the arrow
+                $('.down').fadeIn(500);   
+            }
+        });
+        $(document).ready(function() {
+            $('#arrow-up').click(function(event) {      // When arrow is clicked
+                event.preventDefault();
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+                return false;
+            });
+        })
+    </script>
+<!-- ------------ -->
+<div class="container">
+            <a href="#" class="h1">Be Our Coach</a>
+                                                    <br>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 coachHead">
+                    <p>Our coaches facilitate outdoor classes where kids learn through play. <br /> If you are inspired to bring high quality education to families in your community, <br /> we’d love to meet you.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 coach">
+                    <div class="card border-0">
+                      <img src="https://d3are3finsqbb0.cloudfront.net/wp-content/uploads/2016/09/child.jpg" alt="understanding" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h3 class="card-title mb-4">Title name</h3>
+                        <p class="info">
+                            Detail Coach Lollipop gingerbread chocolate. Sesame snaps chocolate cake marshmallow biscuit cupcake. Apple pie dragée caramels pastry cake marzipan. Croissant topping pie jelly-o cake sweet carrot cake donut.
+                            </p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4 coach">
+                        
+                    <div class="card border-0">
+                      <img src="https://d3are3finsqbb0.cloudfront.net/wp-content/uploads/2016/09/child.jpg" alt="understanding" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h3 class="card-title mb-4">Title name</h3>
+                        <p class="info">
+                            Detail Coach Lollipop gingerbread chocolate. Sesame snaps chocolate cake marshmallow biscuit cupcake. Apple pie dragée caramels pastry cake marzipan. Croissant topping pie jelly-o cake sweet carrot cake donut.
+                            </p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4 coach">
+                    
+                    <div class="card border-0" style="">
+                      <img src="https://d3are3finsqbb0.cloudfront.net/wp-content/uploads/2016/09/child.jpg" alt="understanding" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h3 class="card-title mb-4">Title name</h3>
+                        <p class="info">
+                            Detail Coach Lollipop gingerbread chocolate. Sesame snaps chocolate cake marshmallow biscuit cupcake. Apple pie dragée caramels pastry cake marzipan. Croissant topping pie jelly-o cake sweet carrot cake donut.
+                            </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<style>
+.container > .row > .coach {
+    /*min-height: 400px;*/
+    margin: 10px 0;
+    /*overflow: hidden;*/
+}
+.container > .row > .coach > .card {
+    /*background-color: #f4f4f5;*/
+}
+.container > .row > .coach > .card {
+    transition: all .5s linear;
+}
+.container > .row > .coach > .card:hover{
+    /*transform: skewX(-5deg);*/
+    -webkit-box-shadow: 0px 10px 0px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 0px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 0px -3px rgba(0,0,0,0.75)
+}
+.container > .row > .coach > .card > .card-body > .card-title{
+    color: #7bbfe6;
+}
+.container > .row > .coach > .card > img {
+    width: 350px;
+    height: 233px;
+}
+
+}
+</style>
+<!-- ---- nav ---- -->
+<header>
+      <nav class="shift">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Downloads</a></li>
+          <li><a href="#">More</a></li>
+          <li><a href="#">Nice staff</a></li>
+        </ul>
+      </nav>
+</header>
+<style>
+/* NAVIGATION */
+nav {
+  margin: 0 auto;
+  background: #fff;
+  /*padding: 50px 0;*/
+  background-color: gray;
+}
+nav ul {
+    list-style: none; 
+    text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  text-transform: uppercase;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+/* SHIFT */
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+  text-decoration: none;
+}
+nav.shift ul li a:hover {
+  color: white;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+/*   bottom: 0; */
+  right: 0;
+  margin: auto;
+  height: 1px;
+  content: '';
+  color: transparent;
+  background: #5bc0af;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  height: 100%;
+}
+</style>
+
+<!-- ------------ -->
+    <a href="#.box" class="slide-toggle"><img id="logo" src="img/logo-logo.png" /></a>
+    <div class="box">
+        <div class="box-inner">
+          <ul>
+            <a href="#" ><img src="img/logo-logo.png" alt=""></a>
+            <li><a href="#">Find a class</a></li>
+            <li><a href="#">Be our coach</a></li>
+            <li><a href="#">Stem blogs</a></li>
+          </ul>
+        </div>
+    </div>
+
+<style>
+img#logo {
+  border-radius: 50%;
+  position: fixed;
+  width: 90px;
+  height: 90px;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+  text-align: left;
+  margin: 20px;
+  border: 3px white outset;
+}
+img#logo:hover {
+  border-style: inset;
+}
+.box-inner ul {
+    list-style: none; 
+    text-align: left;
+}
+.box-inner ul li {
+  display: block;
+}
+.box-inner ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  text-transform: uppercase;
+}
+.box-inner ul li a,
+.box-inner ul li a:after,
+.box-inner ul li a:before {
+  transition: all .5s;
+}
+    .box{
+        float:left;
+        overflow: hidden;
+        /*background: #ff5d65;*/
+        display: none;
+        position: fixed;
+        z-index: 9;
+        top: 100px;
+        left: 0px;
+        text-align: left;
+    }
+    /* Add padding and border to inner content
+    for better animation effect */
+    .box .box-inner{
+        width: 220px;
+        padding: 10px; 
+        color:#fff;
+      }
+</style>
+
+  <!-- ------------ -->
+	<!-- CSS -->
+	<link rel="stylesheet" href="homepage2.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- Javascript -->
+	<script src="js.js" type="text/Javascript"></script>
+  <script>
+     $(document).ready(function(){
+        $(".slide-toggle").click(function(){
+            $(".box").animate({
+                width: "toggle"
+            });
+        });
+    });
+  </script>
+	<!-- JQuery -->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
